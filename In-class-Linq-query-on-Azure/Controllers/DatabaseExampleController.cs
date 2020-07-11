@@ -141,6 +141,7 @@ namespace In_class_Linq_query_on_Azure.Controllers
 
             ViewBag.MaxEnrolledCourse = courses.CourseName + " has maximun enrollment";
 
+
             var notEnrolledCourseList = dbContext.courses
                                 .Join(dbContext.studentCourseEnrollment,
                                      c => c.CourseId,
